@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <!-- YOUR SITE NAME & FAVICON -->
+        <title>SITE NAME</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- STYLESHEETS & VIEWPORT-->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- LIGHTBOX -->
+        <div class="lightbox">
+            <i class="material-icons lightbox-close">close</i>
+            <div class="content"></div>
+        </div>
+
+        <section class="header">
+            <div class="container">
+                <!-- LOGO IMAGE OR TEXT -->
+                <div class="logo">
+                    <!-- image -->
+                    <!-- <img src="" /> -->
+
+                    <!-- text -->
+                    <h1>YOUR LOGO</h1>
+                </div>
+
+                <!-- NAVIGATION -->
+                <ul class="main-nav">
+                    <li>
+                        <!-- HREF IS ID TO SECTION YOU WISH TO SCROLL TO -->
+                        <a href="#section1">Section 1</a>
+                    </li>
+                    <li>
+                        <a href="#section2">Section 2</a>
+                    </li>
+                    <li>
+                        <a href="#section3">Section 3</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <!-- SLIDER OR BANNER, JUST HAVE ONE SLIDE IF IT IS A BANNER -->
+            <ul class="slider">
+                <!-- PATH TO IMAGE GOES WITHTIN THE PARENTHESIS -->
+                <!-- EACH LI IS A SLIDE -->
+                <li class="slide active" style="background-image:url(images/samples/sample3.jpg);">
+                    <!-- OPTIONAL CAPTIONS/TITLES -->
+                    <h3 class="caption">Slide 1</h3>
+                </li>
+                <li class="slide" style="background-image:url(images/samples/sample10.jpg);">
+                    <!-- OPTIONAL CAPTIONS/TITLES -->
+                    <h3 class="caption">Slide 2</h3>
+                </li>
+                <li class="slide" style="background-image:url(images/samples/sample2.jpg)">
+                    <!-- OPTIONAL CAPTIONS/TITLES -->
+                    <h3 class="caption">Slide 3</h3>
+                </li>
+                <!-- THESE ARE HIDDEN IF IT IS A BANNER -->
+                <div class="actions">
+                    <i class="material-icons prev">keyboard_arrow_left</i>
+                    <i class="material-icons next">keyboard_arrow_right</i>
+                </div>
+            </ul>
+        </section>
+
+        <!-- SECTION 1 -->
+        <section id="section1">
+            <h1 class="section-title"><span>Section 1</span></h1>
+            <div class="container">
+                <!-- SAMPLES TRIGGER THE LIGHTBOX -->
+                <!-- DESCRIPTIONS CLASS SHOWS THE CAPTION ON HOVER -->
+                <ul class="samples descriptions clearfix">
+                    <!-- COL IS DEFAULTED TO 3, BUT THAT CAN BE UPDATED IN CSS -->
+                    <div class="col">
+                        <!-- SMALL OR LARGE CLASS IS ADDED TO THE SAMPLE TO MAKE IT MORE INTERESTING -->
+                        <!-- DATA-DATA IS THE IMAGE (OR WHATEVER) YOU WANT DISPLAYED IN THE LIGHTBOX, DATA-CAPTION IS THE OPTIONAL CAPTION -->
+                        <li class="sample large" data-data="<img src='images/samples/sample4.jpg' />" data-caption="Live-edge readymade, tofu tumblr knausgaard letterpress etsy meh raclette pinterest salvia fam flannel mustache. Locavore seitan brooklyn, swag cred snackwave meditation lo-fi. Farm-to-table neutra sartorial, godard YOLO you probably haven't heard of them four loko truffaut bushwick tbh occupy trust fund craft beer disrupt fingerstache.">
+                            <span>Image Caption</span>
+                            <!-- PATH TO IMAGE GOES IN PARENTHESIS -->
+                            <div style="background-image:url(images/samples/sample4.jpg)"></div>
+                        </li>
+                        <li class="sample small" data-data="<img src='images/samples/sample6.jpg' />">
+                            <span>Image Caption</span>
+                            <div style="background-image:url(images/samples/sample6.jpg);"></div>
+                        </li>
+                    </div>
+                    <div class="col">
+                        <li class="sample small" data-data="<img src='images/samples/sample7.jpg' />">
+                            <span>Image Caption</span>
+                            <div style="background-image:url(images/samples/sample7.jpg);"></div>
+                        </li>
+                        <li class="sample large" data-data="<img src='images/samples/sample8.jpeg' />">
+                            <span>Image Caption</span>
+                            <div style="background-image:url(images/samples/sample8.jpeg);"></div>
+                        </li>
+                    </div>
+                    <div class="col">
+                        <li class="sample large" data-data="<img src='images/samples/sample9.jpeg' />">
+                            <span>Image Caption</span>
+                            <div style="background-image:url(images/samples/sample9.jpeg);"></div>
+                        </li>
+                        <li class="sample small" data-data="<img src='images/samples/sample5.jpeg' />">
+                            <span>Image Caption</span>
+                            <div style="background-image:url(images/samples/sample5.jpeg);"></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section id="section2">
+            <h2 class="section-title"><span>Section 2</span></h2>
+            <div class="container">
+                <ul class="samples no-description clearfix">
+                    <li class="sample" data-data="<img src='images/samples/sample11.jpg' />">
+                        <div style="background-image:url(images/samples/sample11.jpg)"></div>
+                    </li>
+                    <!-- CAN EMBED VIDEOS IN LIGHTBOX AS WELL -->
+                    <li class="sample" data-data='<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>'>
+                        <!-- FULL LIST OF ICONS IS AVAILABLE HERE: https://design.google.com/icons/ -->
+                        <i class="material-icons">play_circle_outline</i>
+                        <div style="background-color:yellow"></div>
+                    </li>
+                    <li class="sample" data-data="<img src='images/samples/sample13.jpg' />">
+                        <div style="background-image:url(images/samples/sample13.jpg)"></div>
+                    </li>
+                    <li class="sample" data-data='<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>'>
+                        <i class="material-icons">play_circle_outline</i>
+                        <div style="background-color:purple"></div>
+                    </li>
+                    <li class="sample" data-data="<img src='images/samples/sample12.jpeg' />">
+                        <div style="background-image:url(images/samples/sample12.jpeg)"></div>
+                    </li>
+                    <li class="sample" data-data='<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>'>
+                        <i class="material-icons">play_circle_outline</i>
+                        <div style="background-color:blue"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER/FINAL SECTION -->
+        <section id="section3" class="footer">
+            <h2 class="section-title"><span>Section 3</span></h2>
+            <div class="container">
+                <!-- AVAILABLE: Facebook, Twitter, Instagram, Google, Linkedin, Pinterest, RSS, Vimeo, Youtube -->
+                <ul class="social-media clearfix">
+                    <li>
+                        <a href="#" class="icon-facebook" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-twitter" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-instagram" target="_blank"></a>
+                    </li>
+                </ul>
+                <ul class="contact">
+                    <li><i class="material-icons">phone</i> +555 555 5555</li>
+                    <li><i class="material-icons">mail_outline</i> mail@mail.com</li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
